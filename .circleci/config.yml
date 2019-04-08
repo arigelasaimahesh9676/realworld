@@ -35,16 +35,15 @@ jobs:
 
       # run tests!
       - run: yarn run test:unit 
-      - persist_to_workspace:
-          root: .
-          paths:
-            - .
 
   deploy-job:
        docker:
          - image: circleci/node:10.8.0
        working_directory: ~/repo 
        steps:
+         - run:
+             name: Install Firebase
+             command: npm install --save-dev firebase-tools
          - run:
              name: Deploy Master to Firebase
              command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN    

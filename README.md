@@ -26,7 +26,7 @@ Before contributing please read the following:
 
 The stack is built using [vue-cli webpack](https://github.com/vuejs-templates/webpack) so to get started all you have to do is:
 
-``` bash
+```bash
 # install dependencies
 > yarn install
 # serve with hot reload at localhost:8080
@@ -35,7 +35,7 @@ The stack is built using [vue-cli webpack](https://github.com/vuejs-templates/we
 
 Other commands available are:
 
-``` bash
+```bash
 # build for production with minification
 yarn run build
 

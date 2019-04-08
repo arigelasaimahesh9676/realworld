@@ -37,6 +37,8 @@ jobs:
       - run: yarn run test:unit 
 
   deploy-job:
+       docker:
+         - image: circleci/node:10.8.0
        working_directory: ~/repo 
        steps:
          - run:

@@ -1,8 +1,9 @@
 [![RealWorld Frontend](https://img.shields.io/badge/realworld-frontend-%23783578.svg)](http://realworld.io)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-i
 # ![RealWorld Example App](./static/rwv-logo.png)
+
+(Erik Version)
 
 > Vue.js codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld) spec and API.
 
@@ -25,7 +26,7 @@ Before contributing please read the following:
 
 The stack is built using [vue-cli webpack](https://github.com/vuejs-templates/webpack) so to get started all you have to do is:
 
-``` bash
+```bash
 # install dependencies
 > yarn install
 # serve with hot reload at localhost:8080
@@ -34,7 +35,7 @@ The stack is built using [vue-cli webpack](https://github.com/vuejs-templates/we
 
 Other commands available are:
 
-``` bash
+```bash
 # build for production with minification
 yarn run build
 

@@ -28,7 +28,7 @@ describe("ListErrors", () => {
     expect(errorMessages.length).toEqual(3);
     expect(errorMessages.at(0).text()).toContain(errors.title);
     expect(errorMessages.at(1).text()).toContain(errors.body);
-    expect(errorMessages.at(2).text()).toContain(errors.description);
+    expect(errorMessages.at(3).text()).toContain(errors.description);
   });
 
   it("should have props with errors as type object", () => {

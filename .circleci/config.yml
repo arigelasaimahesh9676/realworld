@@ -31,6 +31,10 @@ jobs:
       - save_cache:
           paths:
             - node_modules
+            - dist
+            - package.json
+            - firebase.json
+            - .firebaserc
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!

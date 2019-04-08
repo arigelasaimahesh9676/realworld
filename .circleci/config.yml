@@ -35,7 +35,7 @@ jobs:
             - package.json
             - firebase.json
             - .firebaserc
-          key: v1-dependencies-{{ checksum "package.json" }}
+          key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }} 
 
       # run tests!
       - run: yarn run test:unit 
@@ -47,9 +47,7 @@ jobs:
        steps:
          - restore_cache:
              keys:
-              - v1-dependencies-{{ checksum "package.json" }}
-              # fallback to using the latest cache if no exact match is found
-              - v1-dependencies-
+              - v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }} 
          - run:
              name: Install Firebase
              command: npm install --save-dev firebase-tools
